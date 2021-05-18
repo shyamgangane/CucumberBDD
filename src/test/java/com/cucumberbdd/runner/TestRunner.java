@@ -15,7 +15,7 @@ import io.cucumber.junit.CucumberOptions;
             "json:target/json/file.json",
             },
         monochrome = true,
-        dryRun=true // to tell whether to test run(true) or actual run(false)
+        dryRun=false // to tell whether to test run(true) or actual run(false)
         )	
 		
 		

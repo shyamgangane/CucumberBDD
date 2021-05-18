@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -49,5 +50,15 @@ public class Stepdefination {
 	public void browser_get_close() {
 	    driver.close();
 	}
+	
+	@Given("User open firefox Browser")
+	public void user_open_firefox_browser() {
+		
+		driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+   
+	}
+
 
 }

@@ -20,10 +20,20 @@
 Feature: My First Feature For Automation Practice Application
 
   
-  Scenario: Validate Title Of The Application
+  Scenario: Validate Title Of The Application on Chrome
     Given User open Chrome Browser 
     And User open the url "http://automationpractice.com/index.php"
     When user is on landing page
     Then Title of the page is "My Store"
     And Browser get close
+
+
+
+
+	Scenario: Validate Title Of The Application on Firefox
+	    Given User open firefox Browser 
+	    And User open the url "http://automationpractice.com/index.php"
+	    When user is on landing page
+	    Then Title of the page is "My Store"
+	    And Browser get close
 
